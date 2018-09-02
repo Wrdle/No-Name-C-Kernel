@@ -9,12 +9,14 @@ int kmain()
     print(cool);
     clearScreen();
 
-    if (strContains("String", "=hjvgwdwa") == true)
+    /*if (strContains("String", "=hjvgwdwa") == true)
     {
         print("Substring!");
     }
     else
     {
         print("Not a substring!");
-    }   
+    }*/
+    string i = concat("Cool", "Damn");
+    print(i);
 }

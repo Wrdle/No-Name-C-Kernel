@@ -81,5 +81,31 @@ uint16 strContains(string str, string sub)
     return false;
 }
 
+string concat(string string1, string string2)
+{
+    uint32 length1 = strlength(string1);
+    uint32 length2 = strlength(string2);
+    uint32 x = length1 + length2 - 1;
+    string output;
+    uint32 i = 0;
+    uint32 j = 0;
+
+    for (uint32 y=0; y <= x; y++)
+    {
+        if (y < length1)
+        {
+            output[y] = string1[i];
+            i++;
+        }
+        else
+        {
+            output[y] = string2[j];
+            j++;
+        }
+    }
+    updateCursor();
+    return output;
+}
+
 
 #endif
